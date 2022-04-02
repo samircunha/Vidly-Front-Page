@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Vidly Front Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project i will create a front-end for my project of Vidly, that is a back-end for a rent movies. 
+
+I will use React and Material UI for made this project. 
+
+Soon i will return to continue write about what i did.
 
 ## Available Scripts
 
