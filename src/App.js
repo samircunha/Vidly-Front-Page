@@ -1,33 +1,25 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Box from "@mui/material/Box";
+import React from "react";
+import background from "./assets/background-init.jpg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Typography from "@mui/material/Typography";
 import { Header } from "./components/Header";
-// import { FirstPage } from "./FirstPage";
+import { FirstPage } from "./FirstPage";
 // import { Logging } from "./Logging";
 // import { Register } from "./Register";
-import { Body } from "./Body";
-import { Footer } from "./Footer";
 
 function App() {
-  const styles = {
-    display: "flex",
-    height: "100vh",
-    flexDirection: "column",
-    alignItems: "center",
-  };
   return (
-    // <Box className="App" component="div" sx={styles}>
-    <>
+    <Typography classList='container' sx={{ backgroundImage: `url(${background})`}}>
       <Header />
       <Router>
-        <Switch>
-          {/* <Route exact path='/' component={FirstPage}></Route> */}
+        <Routes>
+          <Route path='/' element={<FirstPage/>}></Route>
           {/* <Route path='/Logging' component={Logging}></Route> */}
           {/* <Route path='/Register' component={Register}></Route> */}
-        </Switch>
+        </Routes>
       </Router>
-    </>
-    // </Box>
+    </Typography>
   );
 }
 
