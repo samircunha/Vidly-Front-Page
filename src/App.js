@@ -9,13 +9,21 @@ import { FirstPage } from "./FirstPage";
 // import { Register } from "./Register";
 
 function App() {
+  const stylesFrontPage = {
+    width: '100vw',
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
+  }
+
   return (
-    <Typography classList='container' sx={{ backgroundImage: `url(${background})`}}>
+    <Typography classList='container' sx={stylesFrontPage}>
       <Header />
       <Router>
         <Routes>
           <Route path='/' element={<FirstPage/>}></Route>
-          {/* <Route path='/Logging' component={Logging}></Route> */}
+          {/* <Route path='/LogIn' component={Logging}></Route> */}
           {/* <Route path='/Register' component={Register}></Route> */}
         </Routes>
       </Router>

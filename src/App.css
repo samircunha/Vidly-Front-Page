@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik+Wet+Paint&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/background-init.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

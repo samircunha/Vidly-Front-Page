@@ -1,23 +1,30 @@
 import React from "react";
-import { MainContainer } from "./components/MainContainer";
 import  {useNavigate} from 'react-router-dom';
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 
 
 export function FirstPage () {
+    const stylesFirstPage = {
+        textAlign: 'center',
+    }
+    const stylesButtons = {
+        color: 'white',
+
+    }
     const navigate = useNavigate();
 
     function onSubmit(data) {
-        navigate('/Logging');
+        navigate(`/${data}`);
     }
     return (
-        <MainContainer>
-            <Button variant='outlined' onClick={onSubmit}>
+        <Box sx={stylesFirstPage}>
+            <Button sx={stylesButtons} size='large' onClick={()=>{onSubmit('LogIn')}}>
                 Log In
             </Button>
-            <Button variant='outlined'>
+            <Button sx={stylesButtons} size='large' onClick={()=>{onSubmit('Register')}}>
                 Register
             </Button>
-        </MainContainer>
+        </Box>
     )
 }
