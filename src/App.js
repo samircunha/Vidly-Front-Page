@@ -1,30 +1,21 @@
 import "./App.css";
 import React from "react";
-import background from "./assets/background-init.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import { Header } from "./components/Header";
-import { FirstPage } from "./FirstPage";
-// import { Logging } from "./Logging";
-// import { Register } from "./Register";
+import { FirstPage } from "./pages/FirstPage";
+import { LogIn } from "./pages/LogIn";
+import { Register } from "./pages/Register";
 
 function App() {
-  const stylesFrontPage = {
-    width: '100vw',
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center'
-  }
-
   return (
-    <Typography classList='container' sx={stylesFrontPage}>
+    <Typography>
       <Header />
       <Router>
         <Routes>
           <Route path='/' element={<FirstPage/>}></Route>
-          {/* <Route path='/LogIn' component={Logging}></Route> */}
-          {/* <Route path='/Register' component={Register}></Route> */}
+          <Route path='/LogIn' element={<LogIn/>}></Route>
+          <Route path='/Register' element={<Register/>}></Route>
         </Routes>
       </Router>
     </Typography>
