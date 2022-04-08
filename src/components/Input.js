@@ -10,7 +10,6 @@ export const Input = forwardRef((props, ref) => {
       inputRef={ref}
       fullWidth
       {...props}
-      color=''
       margin='dense'
       sx={{
         backgroundColor: 'white',
