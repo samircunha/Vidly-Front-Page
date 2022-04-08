@@ -4,12 +4,14 @@ import { MainContainer } from "../components/MainContainer";
 import { Form } from "../components/Form";
 import { Input } from "../components/Input";
 import { PrimaryButton } from "../components/PrimaryButton";
+import { useNavigate } from "react-router-dom"
 
 export function LogIn() {
   const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
 
   const onSubmit = (d) => {
-    alert(JSON.stringify(d));
+    navigate('/OK');
   }
   return (
     <MainContainer>
