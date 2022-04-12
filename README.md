@@ -13,6 +13,7 @@ Table of Contents
   * [Technologies](#-technologies)
   * [Functionalities](#-functionalities)
   * [Layout](#-layout)
+  * [How to use](#-how-to-use)
 <!--te-->
 
 ---
@@ -59,7 +60,7 @@ In this project I'm going to create a front-end for my Vidly project, which is a
 
 ---
 
-## How to use <a name="-How-to-use" style="text-decoration:none"></a>
+## How to use <a name="-how-to-use" style="text-decoration:none"></a>
 
 ```bash
 
