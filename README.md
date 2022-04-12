@@ -12,6 +12,7 @@ Table of Contents
   * [About the project](#-about-project)
   * [Technologies](#-technologies)
   * [Functionalities](#-functionalities)
+  * [Layout](#-layout)
 <!--te-->
 
 ---
@@ -45,3 +46,35 @@ In this project I'm going to create a front-end for my Vidly project, which is a
 
 ---
 
+## Layout <a name="-layout" style="text-decoration:none"></a>
+
+### First Page
+<a alt="First Page" src="../../blob/main/img-first-page.png"></a>
+
+### Login 
+<a alt="Login" src="../../blob/main/img-login.png"></a>
+
+### Register 
+<a alt="Register" src="../../blob/main/img-register.png"></a>
+
+---
+
+## How to use <a name="-How-to-use" style="text-decoration:none"></a>
+
+```bash
+
+# Clone this repository
+$ git clone https://github.com/samircunha/Vidly-Front-Page.git
+
+# Go to the folder
+$ cd form
+
+# Install the dependencies
+$ npm install
+
+# Finally, run
+$ npm start
+
+# If it doesn't open by itself, go to http://localhost:3000.
+
+```
