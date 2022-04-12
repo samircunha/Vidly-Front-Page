@@ -49,13 +49,13 @@ In this project I'm going to create a front-end for my Vidly project, which is a
 ## Layout <a name="-layout" style="text-decoration:none"></a>
 
 ### First Page
-<a alt="First Page" src="https://github.com/samircunha/Vidly-Front-Page/blob/main/img-first-page.png"></a>
+<img alt="First Page" src="https://github.com/samircunha/Vidly-Front-Page/blob/main/img-first-page.png"></img>
 
 ### Login 
-<a alt="Login" src="https://github.com/samircunha/Vidly-Front-Page/blob/main/img-login.png"></a>
+<img alt="Login" src="https://github.com/samircunha/Vidly-Front-Page/blob/main/img-login.png"></img>
 
 ### Register 
-<a alt="Register" src="https://github.com/samircunha/Vidly-Front-Page/blob/main/img-register.png"></a>
+<img alt="Register" src="https://github.com/samircunha/Vidly-Front-Page/blob/main/img-register.png"></img>
 
 ---
 
