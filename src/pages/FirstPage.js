@@ -13,10 +13,10 @@ export function FirstPage() {
     <MainContainer>
       <PrimaryButton
         onClick={() => {
-          onSubmit("LogIn");
+          onSubmit("Login");
         }}
       >
-        Log In
+        Login
       </PrimaryButton>
       <PrimaryButton
         onClick={() => {
