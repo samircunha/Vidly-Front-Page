@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom"
 
 export function LogIn() {
   const { register, handleSubmit } = useForm();
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
-  const onSubmit = (d) => {
+  const onSubmit = (data) => {
     navigate('/OK');
   }
   return (
@@ -18,7 +18,7 @@ export function LogIn() {
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input {...register('email')} type="email" label="E-mail"></Input>
         <Input {...register('password')} type="password" label="Password"></Input>
-        <PrimaryButton type='submit'>Log In</PrimaryButton>
+        <PrimaryButton type='submit'>Login</PrimaryButton>
       </Form>
     </MainContainer>
   );
