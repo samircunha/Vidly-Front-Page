@@ -6,20 +6,27 @@ import { Form } from "../components/Form";
 import { Input } from "../components/Input";
 import { PrimaryButton } from "../components/PrimaryButton";
 import { useNavigate } from "react-router-dom";
+import { useLogged } from "../context/Logged";
 
 export function Login() {
   const [error, setError] = useState(false);
+  const { changeStatus } = useLogged();
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
+  const authUser = (data) => {
     axios
       .post("http://localhost:5000/api/auth", data)
       .then((res) => {
         setError(false);
-        navigate("/OK");
+        navigate('/Browse');
+        changeStatus(true);
       })
       .catch((error) => setError(true));
+  };
+
+  const onSubmit = (data) => {
+    authUser(data);
   };
   return (
     <MainContainer>

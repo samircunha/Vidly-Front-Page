@@ -12,14 +12,19 @@ export function Register() {
   const { register, handleSubmit } = useForm({});
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
+  const registerUser = (data) => {
     axios
       .post("http://localhost:5000/api/users", data)
       .then((res) => {
         setError(false);
-        navigate("/OK");
+        alert("Cadastro efetuado com sucesso!");
+        navigate("/Login");
       })
       .catch((error) => setError(true));
+  };
+
+  const onSubmit = (data) => {
+    registerUser(data);
   };
 
   return (
