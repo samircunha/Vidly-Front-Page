@@ -22,6 +22,8 @@ Table of Contents
 
 In this project I'm going to create a front-end for my Vidly project, which is a back-end for a movie rental company. in this part I will create all user interaction from user registration, login, movie registration, genres, etc. 
 
+15/04/2022: I configured axios to make requests to the backend, now it is possible to register a new user in the database or log in with an existing user, using the backend routes.
+
 ---
 
 ## Technologies <a name="-technologies" style="text-decoration:none"></a>
@@ -29,6 +31,7 @@ In this project I'm going to create a front-end for my Vidly project, which is a
 - **[React](https://en.reactjs.org/)**
 - **[React Router](https://reactrouter.com/)**
 - **[Material UI](https://mui.com/pt/)**
+- **[Axios](https://github.com/axios/axios)**
   
 --- 
 
