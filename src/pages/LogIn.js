@@ -25,8 +25,14 @@ export function Login() {
       .catch((error) => setError(true));
   };
 
+  const removeBackground = () => {
+    const body = document.querySelector("body");
+    body.style.background = "black";
+  }
+
   const onSubmit = (data) => {
     authUser(data);
+    removeBackground();
   };
   return (
     <MainContainer>
